@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/NitinThapa30/bhaskara-ai/main/assets/Bhaskara%20AI.png" alt="Bhaskara AI Logo" width="160"/>
+<img src="./bhaskara_logo.png" alt="Bhaskara AI Logo" width="180"/>
 
 # BHASKARA AI
 
