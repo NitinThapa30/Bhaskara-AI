@@ -526,7 +526,6 @@ This project is released under the [MIT License](LICENSE).
 
 ---
 
-
 <div align="center">
 
 Made with ❤️ in Dehradun, India
