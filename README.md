@@ -33,10 +33,10 @@ Unlike cloud-based AI assistants, Bhaskara AI keeps all your data — conversati
 ┌────────────────────────────────────────────────────────────────┐
 │                       BHASKARA AI                              │
 │                                                                │
-│   Text Chat  ──►  Mistral-7B (llama-cpp)  ──►  Response       │
-│   Voice In   ──►  SpeechRecognition       ──►  TTS Out        │
-│   Image In   ──►  Tesseract / Faster-RCNN ──►  OCR / Tags     │
-│   Text       ──►  Stable Diffusion v1.5   ──►  Image Out      │
+│   Text Chat  ──►  Mistral-7B (llama-cpp)  ──►  Response        │
+│   Voice In   ──►  SpeechRecognition       ──►  TTS Out         │
+│   Image In   ──►  Tesseract / Faster-RCNN ──►  OCR / Tags      │
+│   Text       ──►  Stable Diffusion v1.5   ──►  Image Out       │
 │                                                                │
 │              All processing happens locally.                   │
 └────────────────────────────────────────────────────────────────┘
@@ -320,21 +320,21 @@ Bot: Generating image...
 ┌─────────────────────────────────────────────────────────────────────┐
 │                            FRONTEND (main_gui.py)                   │
 │                                                                     │
-│  ┌──────────────┐   ┌──────────────────┐   ┌───────────────────┐   │
-│  │   Sidebar    │   │   Chat Display   │   │   Input Bar       │   │
-│  │  (QFrame)    │   │  (QListWidget)   │   │  (QTextEdit +     │   │
-│  │              │   │                  │   │   Mode Buttons)   │   │
-│  │ Chat History │   │  ChatBubble[]    │   │                   │   │
-│  │ WeatherCards │   │  WeatherCard[]   │   │  Voice / Image /  │   │
-│  │ NewsCards    │   │  NewsCard[]      │   │  Text / Generate  │   │
-│  └──────────────┘   └──────────────────┘   └───────────────────┘   │
+│  ┌──────────────┐   ┌──────────────────┐   ┌───────────────────┐    │
+│  │   Sidebar    │   │   Chat Display   │   │   Input Bar       │    │
+│  │  (QFrame)    │   │  (QListWidget)   │   │  (QTextEdit +     │    │
+│  │              │   │                  │   │   Mode Buttons)   │    │
+│  │ Chat History │   │  ChatBubble[]    │   │                   │    │
+│  │ WeatherCards │   │  WeatherCard[]   │   │  Voice / Image /  │    │
+│  │ NewsCards    │   │  NewsCard[]      │   │  Text / Generate  │    │
+│  └──────────────┘   └──────────────────┘   └───────────────────┘    │
 │                                                                     │
 │         Signal/Slot ──────────────────────────────────────          │
 │                                                                     │
 │  ┌────────────────────────────────────────────────────────────┐     │
 │  │                    QThread Workers                         │     │
 │  │  ChatModelThread  │ VoiceChatThread  │ ImageProcessThread  │     │
-│  │  ImageGenThread   │ WeatherThread    │ NewsFetchThread      │     │
+│  │  ImageGenThread   │ WeatherThread    │ NewsFetchThread     │     │
 │  └────────────────────────────────────────────────────────────┘     │
 └─────────────────────────────────────────────────────────────────────┘
                               │
