@@ -523,6 +523,7 @@ This project is released under the [MIT License](LICENSE).
 - [Qt / PySide6](https://doc.qt.io/qtforpython/) — Cross-platform GUI framework
 - [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) — Open-source OCR engine
 - [TheBloke on HuggingFace](https://huggingface.co/TheBloke) — GGUF quantized model distributions
+  
 
 ---
 
